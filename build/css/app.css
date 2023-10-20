@@ -406,17 +406,9 @@ h3 {
 
 img {
   max-width: 100%;
+  width: 100%;
+  height: auto;
   display: block;
-}
-
-footer {
-  background-color: #f53756;
-  text-align: center;
-  padding: 1rem;
-}
-footer p {
-  color: #ffffff;
-  margin: 0;
 }
 
 .header {
@@ -741,4 +733,14 @@ footer p {
   background-color: #752f97;
   font-size: 2.4rem;
   font-weight: 700;
+}
+
+.site-footer {
+  background-color: #f53756;
+  padding: 1rem;
+}
+.site-footer p {
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
 }

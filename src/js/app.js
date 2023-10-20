@@ -42,7 +42,6 @@ function scrollNav(){
     });
 }
 
-
 function crearGaleria(){
     const galeria = document.querySelector('.galeria-imagenes');
 
@@ -51,7 +50,7 @@ function crearGaleria(){
         imagen.innerHTML = `
                     <source srcset="build/img/thumb/${i}.avif" type="image/avif">
                     <source srcset="build/img/thumb/${i}.webp" type="image/webp">
-                    <img loading="lazy" src="build/img/thumb/${i}.jpg" alt="imagen vocalista festival">
+                    <img loading="lazy" width="200" height="300" src="build/img/thumb/${i}.jpg" alt="imagen galeria ${i}">
         
         `;
 
@@ -68,7 +67,7 @@ function mostrarImagen(id){
         imagen.innerHTML = `
                     <source srcset="build/img/grande/${id}.avif" type="image/avif">
                     <source srcset="build/img/grande/${id}.webp" type="image/webp">
-                    <img loading="lazy" src="build/img/grande/${id}.jpg" alt="imagen galeria">
+                    <img loading="lazy" width="200" height="300" src="build/img/grande/${id}.jpg" alt="imagen galeria ${id}">
         
         `;
 
