@@ -1,0 +1,53 @@
+@use 'variables' as v;
+/* Podemos usar mixins como funciones inteligentes pasando parametros
+@mixin heading ($color: lightblue, $border-radius: false) {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: $color;
+    letter-spacing: 1px;
+    background-color: red;
+
+    @if $border-radius {
+        border-radius: 1rem;
+    }
+}*/
+
+//Media Queries
+
+@mixin telefono {
+    @media (min-width:v.$telefono) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width:v.$tablet) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width:v.$desktop) {
+        @content;
+    }
+}
+@mixin desktopXL {
+    @media (min-width:v.$desktopXL) {
+        @content;
+    }
+}
+
+//GRID
+
+@mixin grid($columnas, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
+
+//Resear Lista <ul>
+
+@mixin resetear-lista{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
